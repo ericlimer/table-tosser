@@ -177,6 +177,7 @@ def main():
             libtcod.console_set_fullscreen(not libtcod.console_is_fullscreen())
         
         for player_turn_result in player_turn_results:
+            print(player_turn_results)
             message = player_turn_result.get('message')
             dead_entity = player_turn_result.get('dead')
             item_added = player_turn_result.get('item_added')
